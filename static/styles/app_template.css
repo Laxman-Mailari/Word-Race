@@ -243,7 +243,7 @@ input[type=text] {
     border-radius: .5rem;
     /*align-content: center;*/
     text-align: center;
-    margin-top: 50px;
+    margin-top: calc(5vh + 2px);
 
 }
 
@@ -260,7 +260,7 @@ input[type=text] {
 	background-color: rgb(51, 49, 49,0.7);
 	width: 60%;
     margin-left: 20%;
-    height: 100%;
+    height: auto;
     border-radius: 5px;
 }
 
