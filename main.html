@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width ">
+	<link rel="shortcut icon" href="">
+	<meta charset="utf-8">
+	<title>Word Race</title>
+	<meta name="application-name" content="Bubbles Typing Game">
+	<meta name="author" content="KWENE NJUME Emmanuel">
+	<meta name="description" content="Play Bubbles Typing Game to know and to improve your keybord's typing frequency...">
+	<link rel="stylesheet" type="text/css" href="./static/styles/app_template.css">
+</head>
+
+<body>
+<div class="bg-img"></div>
+<div class="screen">
+
+    <header class="header">
+        <div>	
+			<h1 id="logo"> Word Race </h1>
+        </div>
+    </header>
+    
+    <div class="outerContainer">
+		<div id="gamescreen" class="gamescreen"></div>
+		<div class="main" id="main">
+			<ul class="menu" id="menu">
+
+				<li id="menuscreen">
+					<h1 class="menu-title">Game Menu</h1>
+					<p style="font-family: comic san MS; color: rgb(225, 238, 46);">Choose your game type and start playing....!</p>
+					<p id="gameMode">
+						<a href="#" id="easy">Easy</a>
+						<a href="#" id="medium">Medium</a>
+						<a href="#" id="hard">Hard</a>
+					</p>
+				</li>
+				
+				<li class="container" id="container">
+					<div class="stackCount" id="stackCount">
+						Stack
+						<span class = "stacknum" id="stacknum"></span>
+					</div>
+					<div class="frame">
+						<div class="timer" id="timer"></div>
+						<div class="text" id="text"></div>
+						<input class="inputData" id="inputData" autofocus=""></input>
+					</div>
+				</li>
+				
+				<li id="scorescreen">
+
+					<h1 class="menu-title">Scores</h1>
+					<p id="gameresult"></p>
+				</li>
+
+			</ul>
+		</div>
+    </div>
+
+	<audio id="soundGoal">
+        <source src="./static/sound/enterGame.wav" />
+		
+		Your browser does not support HTML5 audio.
+	</audio>
+
+	<audio id="soundFailure">
+        <source src="./static/sound/males-yes-victory.wav" />
+		
+		Your browser does not support HTML5 audio.
+	</audio>
+
+	<audio id="soundNope">
+		<source src="./static/sound/pass.mp3" />
+		Your browser does not support HTML5 audio.
+	</audio>
+
+	<audio id="soundEnd">
+		<source src="./static/sound/winning-notification.wav" />
+		Your browser does not support HTML5 audio.
+	</audio>
+
+	<script type="text/javascript" src="./static/scripts/vendor/jquery.min.js"></script>
+	<script type="text/javascript" src="./static/scripts/wordlogic.js"></script>
+	<script type="text/javascript"> var $ = jQuery; $(function() { var p = new Platform(); p.init(); }); </script>
+
+</div>	
+</body>
+</html>
+
+<!-- @ Laxman M-->
