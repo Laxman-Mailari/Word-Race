@@ -1,1 +1,1 @@
-# Word-Race-readme.txt
+# Word-Race
